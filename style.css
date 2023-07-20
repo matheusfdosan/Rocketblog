@@ -1,3 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* Para cada 1rem no código abaixo, será considerado 10px */
+}
+
+html,
+body {
+  height: 100vh;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-X: hidden;
+}
+
 :root {
   --purple-bg: #290742;
   --dark-bg: #170027;
@@ -8,12 +32,6 @@
 
   --roboto: "Roboto", sans-serif;
   --poppins: "Poppins", sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* -----------
@@ -64,10 +82,12 @@ header .container nav ul li:first-child {
 .search {
   display: flex;
   align-items: center;
+  margin-left: 25px;
 }
 
 .search-input {
-  font-size: 14px;
+  width: 100%;
+  font-size: 1.6rem;
   padding: 11.5px;
   padding-left: 15px;
   border-top-left-radius: 4px;
@@ -83,10 +103,18 @@ header .container nav ul li:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 0.8rem;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   background-color: var(--button-bg);
+}
+
+.burguer {
+  display: none;
+}
+
+.search-bottom {
+  display: none;
 }
 
 /* -----------
@@ -100,7 +128,7 @@ header .container nav ul li:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 0;
+  padding: 60px 0;
   gap: 30px;
 }
 
@@ -111,13 +139,13 @@ header .container nav ul li:first-child {
 
 .hero .text-group h1 {
   font-family: var(--poppins);
-  font-size: 36px;
+  font-size: 3.6rem;
   color: var(--button-bg);
 }
 
 .hero .text-group p {
   font-family: var(--roboto);
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--light-purple);
   margin: 16px 0 24px;
 }
@@ -127,7 +155,7 @@ header .container nav ul li:first-child {
   gap: 10px;
   align-items: center;
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: var(--roboto);
   font-weight: bold;
   color: var(--button-bg);
@@ -187,20 +215,20 @@ header .container nav ul li:first-child {
 .content .post-1__side-post span {
   font-family: var(--roboto);
   color: #000;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .content .post-1__side-post h3 {
   font-family: var(--roboto);
   color: var(--purple-bg);
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 15px 0;
 }
 
 .content .post-1__side-post p {
   font-family: var(--roboto);
   color: #000;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /* -----------
@@ -217,20 +245,20 @@ header .container nav ul li:first-child {
 .card .info span {
   font-family: var(--roboto);
   color: #000;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .card .info h3 {
   font-family: var(--roboto);
   color: var(--purple-bg);
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 8px 0;
 }
 
 .card .info p {
   font-family: var(--roboto);
   color: #000;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .card .thumbnail {
@@ -252,4 +280,173 @@ header .container nav ul li:first-child {
 
 .card:nth-child(3) .thumbnail {
   background-image: url(images/post-4.png);
+}
+
+/* -----------
+  Modal
+--------------- */
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--button-bg);
+  font-size: 6.4rem;
+  color: #fff;
+  font-family: var(--poppins);
+}
+
+.modal.active ul {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-around;
+  align-items: stretch;
+}
+
+.modal.active ul li {
+  padding: 10px;
+}
+
+.modal.active ul li:hover {
+  background-color: #60367e;
+}
+
+/* -----------
+  Media queries
+--------------- */
+
+@media (max-width: 970px) {
+  html {
+    font-size: 60%;
+  }
+
+  header .container nav {
+    display: none;
+  }
+
+  .burguer {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--button-bg);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .burguer:hover {
+    background-color: #60367e;
+  }
+
+  .line {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: transform .3s ease;
+
+  }
+
+  .search__burguer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+
+  .hero .featured-image {
+    width: 100%;
+    height: 20rem;
+    flex: none;
+  }
+}
+
+@media (max-width: 885px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 740px) {
+  .cards-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .post-1__side-post {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 656px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 510px) {
+  html {
+    font-size: 45%;
+  }
+
+  .logo > img {
+    width: 120px;
+  }
+
+  header .container {
+    align-items: flex-end;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .search-bottom {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+
+  .hero {
+    padding: 0;
+  }
+
+  .hero .featured-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 455px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 320px) {
+  .home {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
 }

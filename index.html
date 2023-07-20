@@ -11,7 +11,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+
     <link rel="stylesheet" href="style.css" />
+
     <title>Rocketblog</title>
   </head>
   <body>
@@ -31,12 +35,27 @@
             </ul>
           </nav>
 
-          <div class="search">
-            <input type="text" class="search-input" placeholder="Buscar" />
+          <div class="search__burguer">
+            <div class="search">
+              <input type="text" class="search-input" placeholder="Buscar" />
 
-            <div class="search-button">
-              <img src="images/search.svg" alt="search" />
+              <div class="search-button">
+                <img src="images/search.svg" alt="search" />
+              </div>
             </div>
+
+            <div class="burguer">
+              <div class="line line-one"></div>
+              <div class="line line-two"></div>
+              <div class="line line-three"></div>
+            </div>
+          </div>
+        </div>
+        <div class="search-bottom">
+          <input type="text" class="search-input" placeholder="Buscar" />
+
+          <div class="search-button">
+            <img src="images/search.svg" alt="search" />
           </div>
         </div>
       </header>
@@ -63,90 +82,102 @@
         </div>
       </main>
     </div>
+
     <div class="content">
       <div class="container">
-      <div class="post-1__side-post">
-        <div class="post-1">
-          <div class="thumbnail"></div>
-          <div class="info">
-            <span>Janeiro 04, 2023</span>
-            <h3>Começando no ReactJS em 2022</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut enim
-              odio expedita voluptatem numquam deserunt dignissimos, maxime
-              rerum. Dolore porro laborum pariatur voluptatem aliquid
-              praesentium suscipit accusantium aliquam aspernatur illum!
-            </p>
-          </div>
-        </div>
-
-        <div class="side-post">
+        <div class="post-1__side-post">
           <div class="post-1">
-            <span>Janeiro 04, 2023</span>
-            <h3>
-              Conheça as principais técnicas para conseguir uma vaga
-              internacional em programação
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ea
-              sit officiis sapiente pariatur odio molestiae minima distinctio
-              qui facere assumenda esse possimus recusandae earum! Dolore
-              aperiam tenetur facere dolor?
-            </p>
+            <div class="thumbnail"></div>
+            <div class="info">
+              <span>Janeiro 04, 2023</span>
+              <h3>Começando no ReactJS em 2022</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                enim odio expedita voluptatem numquam deserunt dignissimos,
+                maxime rerum. Dolore porro laborum pariatur voluptatem aliquid
+                praesentium suscipit accusantium aliquam aspernatur illum!
+              </p>
+            </div>
           </div>
 
-          <div class="post-2">
-            <span>Janeiro 04, 2023</span>
-            <h3>Veja a evolução do Front-end na prática</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
-              eu in aliquet ut adipiscing neque.
-            </p>
-          </div>
-        </div>
-      </div>
+          <div class="side-post">
+            <div class="post-1">
+              <span>Janeiro 04, 2023</span>
+              <h3>
+                Conheça as principais técnicas para conseguir uma vaga
+                internacional em programação
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ea
+                sit officiis sapiente pariatur odio molestiae minima distinctio
+                qui facere assumenda esse possimus recusandae earum! Dolore
+                aperiam tenetur facere dolor?
+              </p>
+            </div>
 
-      <div class="cards-posts">
-        <div class="post-1 card">
-          <div class="thumbnail"></div>
-          <div class="info">
-            <span>Janeiro 04, 2023</span>
-            <h3>10 dicas para conseguir a vaga desejada</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
-              eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
-              sed tristique.
-            </p>
-          </div>
-        </div>
-
-        <div class="post-2 card">
-          <div class="thumbnail"></div>
-          <div class="info">
-            <span>Janeiro 04, 2023</span>
-            <h3>Deixe seu código mais semântico com essas dicas</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
-              eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
-              sed tristique.
-            </p>
+            <div class="post-2">
+              <span>Janeiro 04, 2023</span>
+              <h3>Veja a evolução do Front-end na prática</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
+                nibh eu in aliquet ut adipiscing neque.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="post-3 card">
-          <div class="thumbnail"></div>
-          <div class="info">
-            <span>Janeiro 04, 2023</span>
-            <h3>Começando no ReactJS em 2022</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
-              eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
-              sed tristique.
-            </p>
+        <div class="cards-posts">
+          <div class="post-1 card">
+            <div class="thumbnail"></div>
+            <div class="info">
+              <span>Janeiro 04, 2023</span>
+              <h3>10 dicas para conseguir a vaga desejada</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
+                nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit
+                vitae, sed tristique.
+              </p>
+            </div>
+          </div>
+
+          <div class="post-2 card">
+            <div class="thumbnail"></div>
+            <div class="info">
+              <span>Janeiro 04, 2023</span>
+              <h3>Deixe seu código mais semântico com essas dicas</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
+                nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit
+                vitae, sed tristique.
+              </p>
+            </div>
+          </div>
+
+          <div class="post-3 card">
+            <div class="thumbnail"></div>
+            <div class="info">
+              <span>Janeiro 04, 2023</span>
+              <h3>Começando no ReactJS em 2022</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
+                nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit
+                vitae, sed tristique.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="modal">
+      <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Categorias</li>
+        <li>Contato</li>
+      </ul>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
