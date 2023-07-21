@@ -1,7 +1,7 @@
 <h1 align="center"> Desafio Rocketblog by Rocketseat</h1>
 
 <p align="center">
-Neste desafio você irá desenvolver uma homepage para um blog.
+Uma homepage para um blog
 </p>
 
 <p align="center">
