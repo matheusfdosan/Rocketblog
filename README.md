@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Dê uma olhada no projeto [aqui](https://matheusfdosan.github.io/desafio-rocketblog-rocketseat/).
+Dê uma olhada no projeto [aqui](https://matheusfdosan.github.io/rocketblog/).
 
 ## 🔖 Layout
 
